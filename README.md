@@ -77,7 +77,7 @@ To center the product card in the center of the page I made the **body** element
 
 ### Continued development
 
-To get better at transforming designs like these into HTML and CSS code I want to get better at using flexbox and effective ways to deal with typography spacing.
+To get better at transforming designs like these into HTML and CSS code I have to get improve my knowledge on using flexbox and typography spacing.
 
 ### Useful resources
 
