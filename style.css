@@ -1,46 +1,134 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* GLOBAL STYLES */
+
+/* Color Notes
+
+body background color: #f3eae3
+add to cart button: #3d8068
+price color: #3d8068
+product title color: #1d252c
+product category color: #8f9095
+product description color: #8f9095
+
+button text color: #fbfcfc
+*/
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  background-color: #f3eae3;
+  margin: 0;
+  height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
+.flex {
+  display: flex;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 42em;
+  margin: auto;
+  border-radius: 0.5em;
+  /* flex-wrap: wrap; */
+}
+
+.card .left-column,
+.card .right-column {
+  width: 21em;
+  height: auto;
+}
+
+.card .left-column {
+  background-image: url("./images/image-product-desktop.jpg");
+  background-size: cover;
+  border-radius: 0.5em;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.card .right-column {
+  padding: 2.5em;
+}
+
+.card .right-column .product-category {
+  color: #8f9095;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 12px;
+}
+
+.card .right-column .product-title {
+  margin-top: 0.6em;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  line-height: 100%;
+  font-size: 2rem;
+}
+
+.card .right-column .product-description {
+  margin-top: 1em;
+  line-height: 150%;
+  color: #8f9095;
+}
+
+.card .right-column .product-pricing {
+  margin-top: 1.2em;
+  align-items: center;
+}
+
+.card .right-column .product-pricing .price {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: #3d8068;
+}
+
+.card .right-column .product-pricing .previous-price {
+  color: #8f9095;
+  margin-left: 1em;
+  text-decoration: line-through;
+}
+
+.card .right-column .add-to-cart-button {
+  margin-top: 2em;
+  padding: 1em 2em;
+  width: 100%;
+  background-color: #3d8068;
+  border: 0px;
+  border-radius: 0.5rem;
+  color: #fbfcfc;
+  justify-content: center;
+  gap: 1em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width: 375px) {
+ .card {
+  /* flex-direction: column; */
+ }
+}
